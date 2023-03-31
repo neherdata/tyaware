@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Helper script that reads /etc/default/skyaware978
+# and either starts skyaware978 with the configured
+# arguments, or exits with status 64 to tell systemd
+# not to auto-restart the service.
+
+if [ -f /etc/default/skyaware978 ]
+then
+    . /etc/default/skyaware978
+fi
+
+if [ -f /var/cache/piaware/location.env ]
+then
+    . /var/cache/piaware/location.env
+fi
+
+if [ "x$ENABLED" != "xyes" ]
+then
+    echo "skyaware978 not enabled in /etc/default/skyaware978" >&2
+    exit 64
+fi
+
+if [ -n "$PIAWARE_LAT" -a -n "$PIAWARE_LON" ]
+then
+    POSITION="--lat $PIAWARE_LAT --lon $PIAWARE_LON"
+fi
+
+exec /usr/bin/skyaware978 \
+     $NET_OPTIONS $HISTORY_OPTIONS $POSITION \
+     "$@"
+# exec failed, do not restart
+exit 64

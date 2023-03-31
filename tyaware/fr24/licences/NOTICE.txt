@@ -1,0 +1,30 @@
+fr24feed is copyrighted by Flightradar24 (see LICENSE.fr24feed.txt for terms).
+
+fr24feed uses (for header only libraries) or links statically with the following libraries:
+
+* boost asio - Copyright © 2003-2017 Christopher M. Kohlhoff (see LICENSE.boost.txt)
+
+* boost system - Copyright Beman Dawes (see LICENSE.boost.txt)
+
+* boost thread - Copyright William E. Kempf, Anthony Williams, Vicente J. Botet Escriba (see LICENSE.boost.txt)
+
+* c-ares - Copyright 1998 by the Massachusetts Institute of Technology (see LICENSE.c-ares.txt)
+
+* curl - Copyright (c) 1996 - 2018, Daniel Stenberg, daniel@haxx.se, and many contributors (see LICENSE.curl.txt)
+
+* fmtlib - Copyright (c) 2012 - 2016, Victor Zverovich (see LICENSE.fmtlib.txt)
+
+* glibc - Copyright (C) 2002-2018 Free Software Foundation, Inc. (see COPYING.LIB.glibc.txt and LICENSES.glibc.txt)
+
+* libstdc++ - Copyright (C) 1997-2018 Free Software Foundation, Inc. (see COPYING3.libstdc++.txt and COPYING.RUNTIME.libstdc++.txt)
+
+* openssl - Copyright (c) 1998-2018 The OpenSSL Project. Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com). All rights reserved. (see LICENSE.openssl.txt)
+
+* spdlog - Copyright (c) 2016 Gabi Melman. (see LICENSE.spdlog.txt)
+
+* zlib - Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler (see LICENSE.zlib.txt)
+
+* protobuf - Copyright 2008 Google Inc (see LICENSE.protobuf.txt)
+
+
+For object files, see http://repo.feed.flightradar24.com/fr24feed_versions.json
